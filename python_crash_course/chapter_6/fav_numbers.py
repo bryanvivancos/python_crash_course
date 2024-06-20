@@ -6,19 +6,19 @@ fav_numbers = {
     'angelica' : 13,
 }
 
-person = 'sebas'
-print(f"{person.title()}'s fav number is {fav_numbers[person]}")
-person = 'caty'
-print(f'{person.title()} fav number is {fav_numbers[person]}')
-person = 'bryan'
-print(f'{person.title()} fav number is {fav_numbers[person]}')
-person = 'cony'
-print(f'{person.title()} fav number is {fav_numbers[person]}')
-person = 'angelica'
-print(f'{person.title()} fav number is {fav_numbers[person]}')
+num = fav_numbers['sebas']
+print(f"Sebas's fav number is {num}")
+num = fav_numbers['caty']
+print(f"Caty's fav number is {num}")
+num = fav_numbers['bryan']
+print(f"Bryan's fav number is {num}")
+num = fav_numbers['cony']
+print(f"Cony's fav number is {num}")
+num = fav_numbers['angelica']
+print(f"Angelica's fav number is {num}")
 
 
 print(f'\nCaty fav number is {fav_numbers["caty"]}')
 print(f'Bryan fav number is {fav_numbers["bryan"]}')
 print(f'Cony fav number is {fav_numbers["cony"]}')
-print(f'Angélica fav number is {fav_numbers["angelica"]}')
+print(f'Angélica fav number is {fav_numbers["angelica"]}\n')
