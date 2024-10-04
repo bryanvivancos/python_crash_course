@@ -1,4 +1,5 @@
 def city_country(city,country):
+    #formatting a city and his country
     format = f"{city.title()},{country.title()}"
     return format
 
