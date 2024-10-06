@@ -11,11 +11,11 @@ class Restaurant:
     def open_restaurant(self):
         print(f'"{self.name}" restaurant is open')
 
-#instanciando clase
-rest = Restaurant('El encuentro','comida marina')
-#imprimiendo atributos
-print(rest.name)
-print(rest.cuisine_type)
-#llamando ambos métodos
-rest.describe_restaurant()
-rest.open_restaurant()
+# #instanciando clase
+# rest = Restaurant('El encuentro','comida marina')
+# #imprimiendo atributos
+# print(rest.name)
+# print(rest.cuisine_type)
+# #llamando ambos métodos
+# rest.describe_restaurant()
+# rest.open_restaurant()
