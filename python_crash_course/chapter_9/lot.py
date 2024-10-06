@@ -1,6 +1,5 @@
 #making a ticket of lottery
 from random import choice
-#chars = [0,1,2,3,4,5,6,7,8,9,'a','e','i','o','u']
 
 class Lottery:
     def __init__(self,numbers = 4):

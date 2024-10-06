@@ -2,13 +2,11 @@
 from lot import Lottery
 
 #llamada de la clase lottery
-new_try = Lottery()
-
-#ticket ganador
-ticket = new_try.ticket()
+posibilities = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e']
+new_try = Lottery(4)
 
 #my ticket
-my_ticket = new_try.ticket()
+my_ticket = new_try.ticket(posibilities)
 
 #inicio de comprobación
 plays = 0
@@ -17,8 +15,8 @@ max_tries = 1_000_000 #intentos máximos
 
 #comprobación
 while (plays <= max_tries):
-    new_try = Lottery()
-    ticket = new_try.ticket()
+    #ticket ganador
+    ticket = new_try.ticket(posibilities)
     
     if (ticket != my_ticket):
         plays += 1
