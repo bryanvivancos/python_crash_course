@@ -27,6 +27,7 @@ def get_new_userdata(path):
     return user_data
 
 def verify_user(user_data,path):
+    """Verify if the current user is the stored user"""
     verify = input(f"Hi, are you {user_data['firstname']} {user_data['lastname']}? (enter y/n): ")
     if verify == 'y':
         print(f"Welcome back, {user_data['firstname']} {user_data['lastname']}!")
