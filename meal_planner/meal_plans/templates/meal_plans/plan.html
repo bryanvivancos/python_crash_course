@@ -4,19 +4,20 @@
 
 <p>Plan: {{ plan.name }}</p>
 
-<p>Meals</p>
-
+<p>Meals:</p>
 <ul>
     {% for meal in meals %}
         <li>
             <p>{{ meal.name }}: </p>
-            {% for food in foods %}
+            <ul>
+                {% for food in meal.food_set.all %}
                 <li>
                     <p> {{food.description}} </p>
                 </li>
-            {% empty %}
+                {% empty %}
                 <li>There are no foods for this meal yet</li>
             {% endfor %}
+            </ul>
         </li>
     {% empty %}
         <li>There are no meals for this plan yet</li>

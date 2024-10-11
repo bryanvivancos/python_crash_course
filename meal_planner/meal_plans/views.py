@@ -17,8 +17,6 @@ def plans(request):
 def plan(request,plan_id):
     """The page of each meal for plan"""
     plan = Plan.objects.get(id=plan_id)
-    meal = Meal.objects.get(id=plan_id)
-    meals = plan.meal_set.order_by('name')
-    foods = meal.food_set.order_by('description')
-    context = {'plan':plan,'meals':meals,'foods':foods}
+    meals = plan.meal_set.order_by('meal_id')
+    context = {'plan':plan,'meals':meals}
     return render(request,'meal_plans/plan.html',context)
