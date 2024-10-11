@@ -24,7 +24,6 @@ class Food(models.Model):
     """Food inside each meal"""
     food = models.ForeignKey(Meal,on_delete=models.CASCADE)
     description = models.TextField()
-    
     date_added = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
