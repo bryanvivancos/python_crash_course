@@ -1,8 +1,8 @@
 .idx/dev.nix
+*\db.sqlite3
 #learning_log project gitignore
-*/ll_env
-*/db.sqlite3
+\ll_env
 #pizzeria_project project gitignore
-*/pp_env
+\pp_env
 #meal_planner project gitignore
-*/mp_env
+\mp_env
